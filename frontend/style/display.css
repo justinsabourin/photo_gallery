@@ -1,0 +1,52 @@
+#display {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #c9e2e8;
+}
+
+#display img {
+    border-radius: 8px;
+    max-width: 85%;
+    height: auto;
+    max-height: 390px;
+    z-index: 1;
+}
+
+#display #delete-image {
+    align-self: flex-start;
+    background-color: #b5d9e2;
+    padding: 8px;
+    margin-left: -3px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 0;
+}
+
+#display #delete-image:hover {
+    background-color: #c9e2e8;
+}
+
+#display .left-arrow-icon {
+    margin-right: auto;
+}
+
+#display .right-arrow-icon {
+    margin-left: auto;
+}
+
+.empty-gallery-message {
+    margin-top: 120px;
+    font-size: 2em;
+    color: white;
+}
+
+#empty-gallery {
+    margin-top: 120px;
+}

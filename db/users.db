@@ -1,0 +1,2 @@
+{"username":"abcdef","salt":"UCohbU5Rx0+zBZVzOjdsXg==","saltedHash":"o3IK7CsVUy/tXHLWkgWuhI5OBzNAT1NrW4i/9h+44sdKs/5W//0Q1Xz5BbJURJrgN9cxntma4a6cgrxKSZ9AcQ==","_id":"UF6G1BlGgSvdiRNO"}
+{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}

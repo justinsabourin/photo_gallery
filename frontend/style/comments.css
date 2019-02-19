@@ -1,0 +1,79 @@
+#comment-section {
+    max-width: 800px;
+    margin: auto;
+    color: black;
+    background-color: #b5d9e2;
+}
+
+#comments {
+    display: none;
+}
+
+.comment-list {
+    text-align: left;
+}
+
+.comment-list .comment {
+    overflow: hidden;
+    background-color: white;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+}
+
+.comment::after {
+    clear:both;
+}
+
+.comment-list .comment p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.comment-list .comment:nth-child(even) {
+    text-align: right;
+}
+
+
+.comment-list .comment .delete-comment {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+
+.comment-list .comment h5 {
+    float: left;
+    margin-bottom: 0;
+}
+
+.pagination {
+    margin-top: 10px;
+    padding: 30px 0;
+    border-top: 2px solid black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pagination .btn {
+    display: none;
+}
+
+.pagination span:first-child{
+    margin-left: 120px;
+}
+
+.pagination span:last-child{
+    margin-right: 90px;
+}
+
+.pagination button:first-child {
+    float: left;
+}
+
+.pagination button:last-child {
+    float: right;
+}

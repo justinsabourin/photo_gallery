@@ -1,0 +1,61 @@
+/*Adapted from http://www.w3schools.com/howto/howto_css_modals.asp*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+}
+
+.upload-modal-content {
+    margin: 20px auto;
+    border: 1px solid #888;
+    width: 400px;
+    padding-top: 6px;
+}
+
+.upload-modal-content .page-form .form-element {
+    width: 90%;
+}
+
+
+#upload-modal, #error-modal {
+    top: 60px;
+}
+
+#upload-file {
+    display: none;
+}
+
+.error-modal-content {
+    margin: 100px auto;
+    width: 30%;
+    overflow: hidden;
+}
+
+.error-modal-content h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.error-modal-content p {
+    color: red;
+    padding-bottom: 20px;
+}
+
+.error-modal-content .btn {
+    float: right;
+    padding: 10px;
+}

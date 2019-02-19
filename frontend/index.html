@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>The Web Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style/main.css">
+    <link rel="stylesheet" type="text/css" href="/style/galleries.css">
+    <link rel="stylesheet" type="text/css" href="/style/authentication.css">
+    <link rel="stylesheet" type="text/css" href="/style/display.css">
+    <link rel="stylesheet" type="text/css" href="/style/comments.css">
+    <link rel="stylesheet" type="text/css" href="/style/modal.css">
+    <link rel="stylesheet" type="text/css" href="/style/forms.css">
+    <link rel="stylesheet" type="text/css" href="/style/icons.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="gallery-header">
+            <span id="go-back" class="text-icon"><span class="icon back-icon"></span>Galleries</span>
+            <span class="header-title" id="image-title">
+                <span class="title"></span>
+            </span>
+            <span id="upload" class="text-icon"><span class="icon upload-icon"></span>Upload</span>
+        </div>
+        <div class="header" id="galleries-header">
+            <span id="signout" class="text-icon"><span class="icon signout-icon"></span>Sign Out</span>
+            <span class="header-title title">Galleries</span>
+            <span id="my-gallery" class="text-icon"><span class="icon gallery-icon"></span>My Gallery</span>
+        </div>   
+    </header>
+
+    <div class="view" id="login-view">
+        <div id="login-modal" class="modal authentication-modal">
+            <div class="authentication-modal-content modal-content">
+                <form id="login-form" class="page-form">
+                    <div class="form-title">Log In</div>
+                    <label class="form-label" for="login-username">Username</label>
+                    <input style="margin-bottom:30px;" type="text" id="login-username" class="form-element" placeholder="">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="login-password" class="form-element" placeholder="">
+                    <span class="error"></span>
+                    <input type="submit" value="Log in">
+                </form>
+                <div style="margin: 20px 0; text-transform: uppercase; font-size: 0.8em;">Don't have an account? Sign up <a id="go-to-signup" href="#">here</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view" id="signup-view">
+        <div id="signup-modal" class="modal authentication-modal">
+            <div class="authentication-modal-content modal-content">
+                <form id="signup-form" class="page-form">
+                    <div class="form-title">Sign Up</div>
+                    <label class="form-label" for="signup-username">Username</label>
+                    <input style="margin-bottom:30px;" type="text" id="signup-username" class="form-element" placeholder="Enter your username">
+                    <label class="form-label" for="signup-password">Password</label>
+                    <input type="password" id="signup-password" class="form-element" placeholder="Enter your password">
+                    <span class="error"></span>
+                    <input type="submit" value="Sign Up">
+                </form>
+                <div style="margin: 20px 0; text-transform: uppercase; font-size: 0.8em;">Already have an account? Sign in <a id="go-to-login" href="#">here</a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="view" id="galleries-view">
+        <div class="galleries-list">
+        </div>
+        <button class="wide-button">More Galleries</button>
+    </div>
+
+
+    <div class="view" id="gallery-view">
+        <div id="display">
+            <span id="left-arrow" class="icon left-arrow-icon"></span>
+            <div style="display: flex;">
+                <img src="" alt="Gallery Picture">
+                <div id="delete-image">
+                    <span class="icon trash-icon"></span>
+                </div>
+            </div>
+            <span id="right-arrow" class="icon right-arrow-icon"></span>
+        </div>
+
+        <div id="comment-section">
+            <form id="comment-form" class="page-form">
+                <div class="form-title">Comment</div>
+                <label class="form-label" for="comment-text">Comment</label>
+                <textarea id="comment-text" class="form-element"></textarea>
+                <input type="submit">
+                <span class="error"></span>
+            </form>
+            <div id="comments">
+                <div class="comment-list">
+
+                </div>
+                <div class="pagination">
+                    <button class="btn" id="previous-comment">Previous Page</button>
+                    <span></span>
+                    <button class="btn" id="next-comment">Next Page</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="empty-gallery">
+            <span class="empty-gallery-message"></span>
+        </div>
+
+        <div id="upload-modal" class="modal">
+            <div class="modal-content upload-modal-content">
+                <span class="error">Unable to add image</span>
+                <form id="upload-image-form" class="page-form">
+                    <div class="form-title">Upload An Image</div>
+                    <label class="form-label" for="upload-image-title">Title</label>
+                    <input style="margin-bottom:30px;" type="text" id="upload-image-title" class="form-element">
+                    <div class="form-radio">
+                        <input id="url-radio-button" type="radio" name="URL" value="URL" checked><label class="form-label" for="url-radio-button">URL</label>
+                        <input disabled id="file-radio-button" type="radio" name="URL" value="FileUpload"><label class="form-label" for="file-radio-button">File Upload</label>
+                    </div>
+                    <input type="text" id="upload-image-url" class="form-element" placeholder="URL">
+                    <input id="upload-file" type="file" class="form_element">
+                    <input style="align-self: center; margin-top: 20px;" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="error-modal" class="modal">
+        <div class="modal-content error-modal-content">
+            <h3>Error</h3>
+            <p>Soemthing happened</p>
+            <button id="close-error-modal" class="btn">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <a class="credits" href="/credits.html">Credits</a>
+    </footer>
+
+    <script src="/js/model.js"></script>
+    <script src="/js/view.js"></script>
+    <script src="/js/controller.js"></script>
+</body>
+</html>

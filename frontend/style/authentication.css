@@ -1,0 +1,27 @@
+.authentication-modal {
+    display: block;
+    top: 0;   
+}
+
+.authentication-modal .authentication-modal-content {
+    margin: 70px auto;
+    width: 300px;
+    overflow: hidden;
+    padding: 6px 20px;
+}
+
+.authentication-modal-content .page-form {
+    margin-bottom: 10px;
+}
+
+.authentication-modal-content .page-form input[type=submit]{
+    width: 110px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.authentication-modal-content .page-form input[type=submit]:hover {
+  background: #c9e2e8;
+  color: #ffffff;
+}
+

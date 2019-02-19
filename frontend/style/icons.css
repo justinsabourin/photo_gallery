@@ -1,0 +1,59 @@
+.trash-icon {
+    background: url('/media/trash-icon.svg') no-repeat center;
+}
+
+.upload-icon {
+    background: url('/media/upload-icon.svg') no-repeat center;
+}
+
+.left-arrow-icon {
+    background: url('/media/arrow.svg') no-repeat center;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.right-arrow-icon {
+    background: url('/media/arrow.svg') no-repeat center;
+}
+
+.gallery-icon {
+    background: url('/media/gallery-icon.svg') no-repeat center;
+}
+
+.signout-icon {
+    background: url('/media/signout-icon.svg') no-repeat center;
+}
+
+.back-icon {
+    background: url('/media/back-icon.svg') no-repeat center;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.icon:hover, .text-icon:hover {
+    background-color: #c9e2e8;
+}
+
+.text-icon {
+    cursor: pointer;
+    font-size: 0.9em;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.text-icon .icon {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+    display: block;
+    margin: 0 auto;
+}
