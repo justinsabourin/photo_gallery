@@ -2,10 +2,6 @@
 var view = (function() {
     "use strict";
 
-    
-    window.onpopstate = function(e) {
-        console.log(e);
-    };
 
     // View interface
 

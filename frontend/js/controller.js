@@ -9,7 +9,7 @@
                 method: 'GET',
             }, function() {
                 model.getImage({
-                    href: `/api/users/abcdef/images/${match[2]}`,
+                    href: `/api/users/${match[1]}/images/${match[2]}`,
                     method: 'GET'
                 });
             });
