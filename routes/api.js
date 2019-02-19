@@ -6,7 +6,7 @@ const expressValidator = require('express-validator');
 const monk = require('monk')
 
 // Connection URL
-const url = 'localhost:27017/photogallery';
+const url = process.env.MONGODB_URI || 'localhost:27017/photogallery';
 
 const db = monk(url);
 
