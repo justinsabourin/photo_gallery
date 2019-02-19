@@ -22,6 +22,7 @@ var Comment = function(comment, image_id) {
     this.author = comment.author;
     this.text = comment.text;
     this.image_id = image_id;
+    this.createdAt = new Date();
 };
 
 /* REST response comment model */

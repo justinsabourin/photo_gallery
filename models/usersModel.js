@@ -41,6 +41,7 @@ var User = function(user) {
     this.username = user.username;
     this.salt = crypto.randomBytes(16).toString('base64');
     this.saltedHash = crypto.createHmac('sha512', this.salt).update(user.password).digest('base64');
+    this.createdAt = new Date();
 };
 
 /*REST response user model*/

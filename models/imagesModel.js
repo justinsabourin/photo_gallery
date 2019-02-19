@@ -36,6 +36,7 @@ var Image = function(image) {
     this.picture = image.file || image.metadata.picture;
     this.gallery_owner = image.metadata.gallery_owner;
     this.title = image.metadata.title;
+    this.createdAt = new Date();
 };
 
 Image.Type = {
