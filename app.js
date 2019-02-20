@@ -14,7 +14,7 @@ app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { httpOnly: true, sameSite: true }
+    cookie: { httpOnly: true, sameSite: false }
 }));
 
 app.use(compression());
