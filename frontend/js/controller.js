@@ -88,7 +88,7 @@
     });
 
     document.addEventListener('onSignupSuccess', function(e) {
-        view.navigate('login');
+        model.login(e.detail);
     });
 
     document.addEventListener('onSignupFailure', function(e) {

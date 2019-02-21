@@ -42,7 +42,7 @@ var model = (function() {
                 document.dispatchEvent(new CustomEvent('onSignupFailure', {detail: err}));
                 return;
             }
-            document.dispatchEvent(new CustomEvent('onSignupSuccess', {detail: response}));
+            document.dispatchEvent(new CustomEvent('onSignupSuccess', {detail: credentials}));
         });
     };
 
